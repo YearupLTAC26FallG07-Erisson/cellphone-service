@@ -57,4 +57,9 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
+    // Method to simulate making a call
+    public void dial(String phoneNumber) {
+        System.out.println(this.owner + "'s phone is calling " + phoneNumber);
+    }
 }
