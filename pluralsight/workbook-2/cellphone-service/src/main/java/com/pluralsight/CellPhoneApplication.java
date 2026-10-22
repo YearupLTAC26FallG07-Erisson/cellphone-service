@@ -68,8 +68,9 @@ public class CellPhoneApplication {
 
         System.out.println("\n--- Testing Dial Method ---");
         // Testing the dial method we created
-        phone1.dial("855-555-2222");
-        phone2.dial("800-555-1212");
+        phone1.dial(phone2.getPhoneNumber());
+        phone2.dial(phone1.getPhoneNumber());
+
 
         scanner.close();
     }
